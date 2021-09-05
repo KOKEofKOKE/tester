@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="main.js"></script>
   <style>
-    body {
+    footer {
       text-align: center;
     }
     .col-1 {
@@ -35,23 +35,33 @@
   <main>
     <form name="param">
       <div>
+        <ul>
         <div>
-          <span class="col-1"><label for="name">ラベル(アイコン名)</label></span>
+          <span class="col-1">
+            <li><label for="name">ラベル(アイコン名)</label></li>
+          </span>
           <span class="col-2"><input type="text" id="label" placeholder="表示させたいラベル" name="name"></span>
         </div>
         <div>
-          <span class="col-1"><label for="url">URL</label></span>
+          <span class="col-1">
+            <li><label for="url">URL</label></li>
+          </span>
           <span class="col-2"><input type="url" id="url" placeholder="例）https://google.com" name="url"></span>
         </div>
         <div>
-          <span class="col-1"><label for="icon">アイコン(画像)</label></span>
+          <span class="col-1">
+            <li><label for="icon">アイコン(画像)</label></li>
+          </span>
           <span class="col-2"><input type="file" id="icon" name="icon" accept="image/*"></span>
         </div>
         <div>
-          <span class="col-1"><label for="count">個数</label></span>
+          <span class="col-1">
+            <li><label for="count">個数</label></li>
+          </span>
           <span class="col-2"><input type="number" id="count" name="count" value="1" min="1"></span>
         </div>
         <input type="button" value="作成！" title="lol" onClick="func()">
+      </ul>
       </div>
     </form>
     <hr>
