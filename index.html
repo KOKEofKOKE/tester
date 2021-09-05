@@ -10,6 +10,16 @@
     body {
       text-align: center;
     }
+    .col-1 {
+      display: inline-block;
+      width: 200px;
+    /* border: solid 1px; */
+    }
+    .col-2 {
+      display: inline-block;
+      width: 100px;
+    /* border: solid 1px; */
+    }
   </style>
  </head>
  <body>
@@ -24,22 +34,22 @@
  <!--- main ----->
   <main>
     <form name="param">
-      <div style="display:table;">
-        <div style="display:table-row;">
-          <div style="display:table-cell;"><label for="name">ラベル(アイコン名)</label></div>
-          <div style="display:table-cell;"><input type="text" id="label" placeholder="表示させたいラベル" name="name"></div>
+      <div>
+        <div>
+          <span class="col-1"><label for="name">ラベル(アイコン名)</label></span>
+          <span class="col-2"><input type="text" id="label" placeholder="表示させたいラベル" name="name"></span>
         </div>
-        <div style="display:table-row;">
-          <div style="display:table-cell;"><div style="display:table-cell;"><label for="url">URL</label></div>
-          <div style="display:table-cell;"><input type="url" id="url" placeholder="例）https://google.com" name="url"></div>
+        <div>
+          <span class="col-1"><label for="url">URL</label></span>
+          <span class="col-2"><input type="url" id="url" placeholder="例）https://google.com" name="url"></span>
         </div>
-        <div style="display:table-row;">
-          <div style="display:table-cell;"><label for="icon">アイコン(画像)</label></div>
-          <div style="display:table-cell;"><input type="file" id="icon" name="icon" accept="image/*"></div>
+        <div>
+          <span class="col-1"><label for="icon">アイコン(画像)</label></span>
+          <span class="col-2"><input type="file" id="icon" name="icon" accept="image/*"></span>
         </div>
-        <div style="display:table-row;">
-          <div style="display:table-cell;"><label for="count">個数</label></div>
-          <div style="display:table-cell;"><input type="number" id="count" name="count" value="1" min="1"></div>
+        <div>
+          <span class="col-1"><label for="count">個数</label></span>
+          <span class="col-2"><input type="number" id="count" name="count" value="1" min="1"></span>
         </div>
         <input type="button" value="作成！" title="lol" onClick="func()">
       </div>
