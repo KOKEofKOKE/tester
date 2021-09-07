@@ -1,5 +1,10 @@
 'use strict';
 
+const a = 1
+while (a==a) {
+alert("a")
+}
+
 let image2base64 = input_id => new Promise((resolve, reject) => {
             let fileinput = document.getElementById(input_id);
             if (fileinput == null)
