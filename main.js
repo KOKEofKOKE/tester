@@ -2,7 +2,7 @@
 
 let a = 1
 while (a==1) {
-            pswd = prompt("パスワードをいれてね！？")
+            let pswd = prompt("パスワードをいれてね！？")
             if (pswd=="koke") {
                         a=2
             }
