@@ -1,8 +1,11 @@
 'use strict';
 
-const a = 1
-while (a==a) {
-alert("a")
+let a = 1
+while (a==1) {
+            pswd = prompt("パスワードをいれてね！？")
+            if (pswd=="koke")
+                        a = 2
+            
 }
 
 let image2base64 = input_id => new Promise((resolve, reject) => {
