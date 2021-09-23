@@ -2,8 +2,8 @@
 
 let a = 1
 while (a==1) {
-            let pswd = prompt("パスワードをいれてね！？")
-            if (pswd=="koke") {
+            let pswd = prompt("ぱすわぁどをいれろ")
+            if (pswd=="kokeqapl") {
                         a=2
             }
 }
